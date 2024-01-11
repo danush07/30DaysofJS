@@ -77,10 +77,6 @@
   
   const keys = document.querySelectorAll('.key');
   keys.forEach(key => key.addEventListener('transitionend', (e)=> {
-    if (e.propertyName !== 'transform'){
-
-      return;
-    } 
     const keyElement = e.target;
     keyElement.classList.remove('playing');
   }));
